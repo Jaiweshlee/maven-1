@@ -75,7 +75,34 @@ under the License.
     <maven.site.path>ref/4-LATEST</maven.site.path>
     <project.build.outputTimestamp>2021-04-05T08:12:18Z</project.build.outputTimestamp>
   </properties>
-
+<repositories>
+   <repository>
+      <id>cloudera</id>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+      <releases>
+         <enabled>true</enabled>
+      </releases>
+      <snapshots>
+         <enabled>true</enabled>
+      </snapshots>
+   </repository>
+   <repository>
+      <id>central</id>
+      <url>http://repo.maven.apache.org/maven2/</url>
+   </repository>
+   <repository>
+      <id>forplay-legacy</id>
+      <url>http://forplay.googlecode.com/svn/mavenrepo</url>
+   </repository>
+   <repository>
+      <id>org.apache.maven.plugins</id>
+      <url>https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin</url>
+   </repository>
+   <repository>
+      <id>org.apache.maven.plugins</id>
+      <url>https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin</url>
+   </repository>
+</repositories>
   <modules>
     <module>maven-bom</module>
     <module>maven-plugin-api</module>
